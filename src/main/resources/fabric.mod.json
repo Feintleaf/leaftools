@@ -1,0 +1,43 @@
+{
+	"schemaVersion": 1,
+	"id": "leaftools",
+	"version": "${version}",
+	"name": "Leaftools",
+	"description": "Subscribe to Feintleaf ",
+	"authors": [
+		"Feintleaf"
+	],
+	"contact": {
+		"homepage": "https://www.youtube.com/@FeintLeaf",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "All Rights Reserved",
+	"icon": "assets/leaftools/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"feintleaf.modid.Leaftools"
+		],
+		"fabric-datagen": [
+			"feintleaf.modid.LeaftoolsDataGenerator"
+		],
+		"client": [
+			"feintleaf.modid.LeafToolsCleint"
+		],
+		"server": [],
+		"fabric-gametest": [],
+		"preLaunch": []
+	},
+	"mixins": [
+		"leaftools.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.13",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
